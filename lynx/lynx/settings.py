@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-%t&+-l@4v6rxd9ens-p3dj-hx#xm=w&gpxm*$g8333m=g%d+a#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Allowed hosts set to all
 ALLOWED_HOSTS = ['*']
 
 
@@ -76,6 +77,7 @@ WSGI_APPLICATION = 'lynx.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# Postgres configurations
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
