@@ -1,0 +1,33 @@
+# Signup Request
+POST http://localhost:8000/signup/
+Content-Type: application/json
+
+{
+  "username": "your_username",
+  "password": "your_password",
+  "email": "your_email@example.com"
+}
+
+###
+
+# Login Request
+POST http://localhost:8000/login/
+Content-Type: application/json
+
+{
+  "username": "your_username",
+  "password": "your_password"
+}
+
+###
+
+# Test Token Request
+GET http://localhost:8000/test_token/
+Content-Type: application/json
+Authorization: Bearer your_jwt_token
+
+{
+  "username": "your_username",
+  "password": "your_password",
+  "email": "your_email@example.com"
+}
